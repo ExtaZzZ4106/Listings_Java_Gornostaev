@@ -25,6 +25,6 @@ class VehicleAccessDemo{
         Vehicle3_10 ferrari=new Vehicle3_10(2, 4, 360,12);
 
         double distance=ferrari.distance(0.6);
-        System.out.println("скорость Ferrari: "+ferrari.maxspeed+" км.ч"); // переменая maxspeed не будет работать так как она находится в привате
+        //System.out.println("скорость Ferrari: "+ferrari.maxspeed+" км.ч"); // переменая maxspeed не будет работать так как она находится в привате
     }
 }
