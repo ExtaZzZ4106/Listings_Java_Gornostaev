@@ -1,4 +1,4 @@
-package Listing_6
+package Listing_6;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
@@ -7,7 +7,7 @@ public class Listing6_5 {
     private Date fromDate = null;
     private SimpleDateFormat formatter = null;
 
-    public DatePart(Date anyDate) {
+    public Listing6_5(Date anyDate) {
         fromDate = anyDate;
         formatter = new SimpleDateFormat("EEE MMM dd hh:mm:ss yyyy", Locale.getDefault());
     }
@@ -39,7 +39,7 @@ public class Listing6_5 {
 
     public static void main(String[] args) {
         Date currentDate = new Date();
-        DatePart datePart = new DatePart(currentDate);
+        Listing6_5 datePart = new Listing6_5(currentDate);
 
         System.out.println("Day: " + datePart.getDay());
         System.out.println("Month: " + datePart.getMonth());
