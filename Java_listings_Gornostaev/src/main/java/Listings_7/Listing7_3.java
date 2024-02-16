@@ -1,19 +1,15 @@
 package Listings_7;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import java.io.*;
 
 public class Listing7_3 {
     static class GrepInputStream extends FileInputStream {
         String substring = null;
         BufferedReader br;
 
-        public GrepInputStream(File file, String substring) throws IOException {
-            super(file);
-            this.br = new BufferedReader(new InputStreamReader(new FileInputStream(file)));
+        public GrepInputStream(InputStream file, String substring) throws IOException {
+            super(file.toString());
+            this.br = new BufferedReader(new InputStreamReader(new FileInputStream(file.toString())));
             this.substring = substring;
         }
 
